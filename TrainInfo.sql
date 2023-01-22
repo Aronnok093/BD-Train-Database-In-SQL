@@ -1,0 +1,71 @@
+create Database TranInfo;
+
+create table Train(
+	Train_No int,
+	Train_Name varchar(250),
+	Offday varchar(250),
+	Departure_Station varchar(250),
+	Departure_time varchar(250),
+	Arrival_Station varchar(250),
+	Arrival_Time varchar(250)
+);
+INSERT INTO Train(Train_No,Train_Name,Offday,Departure_Station,Departure_time,Arrival_Station,Arrival_Time)VALUES
+(701,'Subarna Express' ,'Friday' ,'Chittagong' ,'07:00' ,'Dhaka' ,'12:40') 
+,(702,'Subarna Express' ,'Friday' ,'Dhaka' ,'15:00' ,'Chittagong' ,'20:30') 
+,(703,'Mohanagar Goduli' ,'No' ,'Chittagong','15:00','Dhaka','22:15') 
+,(704,'Mohanagar Provati' ,'No' ,'Dhaka' ,'07:45' ,'Chittagong' ,'14:55') 
+,(705,'Ekota Express' ,'Tuesday' ,'Dhaka' ,'10:00' ,'Dinajpur' ,'19:45') 
+,(706,'Ekota Express' ,'Monday' ,'Dinajpur' ,'21:20' ,'Dhaka' ,'07:10') 
+,(707,'Tista Express' ,'Monday' ,'Dhaka' ,'07:30' ,'Dewangong' ,'12:45') 
+,(708,'Tista Express' ,'Monday' ,'Dewangong' ,'15:00' ,'Dhaka' ,'20:45') 
+,(709,'Parabat Express' ,'Tuesday' ,'Dhaka' ,'06:35' ,'Sylhet' ,'13:40') 
+,(710,'Parabat Express' ,'Tuesday' ,'Sylhet' ,'15:00' ,'Dhaka' ,'22:25') 
+,(711,'Upukol Express' ,'Wednesday' ,'Noakhali' ,'06:00' ,'Dhaka' ,'12:30') 
+,(712,'Upukol Express' ,'Tuesday' ,'Dhaka','15:20' ,'Noakhali' ,'21:40') 
+,(713,'Karutoa Express' ,'No' ,'Santahar' ,'16:25' ,'Borimari' ,'22:30')
+,(714,'Karutoa Express' ,'No' ,'Borimari' ,'17:00' ,'Santahar' ,'23:10') 
+,(717,'Joyantika Express' ,'No' ,'Dhaka' ,'12:00' ,'Sylhet' ,'19:45') 
+,(718,'Joyantika Express','Thursday','Sylhet','08:40','Dhaka','16:20') 
+,(719,'Paharika Express' ,'Monday','Chittagong','08:45','Sylhet','18:00') 
+,(720,'Paharika Express' ,'Saturday','Sylhet' ,'10:15' ,'Chittagong','20:05') 
+,(721,'Mohanagar Express' ,'Sunday' ,'Chittagong' ,'12:30' ,'Dhaka' ,'19:30') 
+,(722,'Mohanagar Express' ,'Sunday' ,'Dhaka' ,'21:00' ,'Chittagong' ,'05:00') 
+,(723,'Uddayan Express' ,'Saturday' ,'Chittagong' ,'21:45' ,'Sylhet' ,'06:55') 
+,(724,'Uddayan Express' ,'Sunday' ,'Sylhet' ,'21:20' ,'Chittagong' ,'06:35') 
+,(729,'Meghna Express' ,'No' ,'Chittagong' ,'17:15' ,'Chandpur' ,'22:00') 
+,(730,'Meghna Express' ,'No' ,'Chandpur' ,'05:00' ,'Chittagong' ,'10:00') 
+,(735,'Agnibina Express' ,'No' ,'Dhaka' ,'09:40' ,'Tarakandi' ,'15:20') 
+,(736,'Agnibina Express' ,'No' ,'Tarakandi' ,'16:30' ,'Dhaka' ,'23:00') 
+,(737,'Egarosindhur Provati' ,'Wednesday' ,'Dhaka' ,'07:15' ,'Kisoregonj' ,'11:15') 
+,(738,'Egarosindhur Provati' ,'No' ,'Kisoregonj' ,'06:45' ,'Dhaka' ,'10:45') 
+,(739,'Upaban Express' ,'Wednesday' ,'Dhaka' ,'21:50' ,'Sylhet' ,'05:30') 
+,(740,'Upaban Express' ,'No' ,'Sylhet' ,'22:00' ,'Dhaka' ,'05:25') 
+,(741,'Turna Express' ,'No' ,'Chittagong' ,'23:00' ,'Dhaka' ,'06:30') 
+,(742,'Turna Express' ,'No' ,'Dhaka' ,'23:30' ,'Chittagong' ,'07:10') 
+,(743,'Bharamaputra' ,'No' ,'Dhaka' ,'18:00' ,'Dewangong' ,'00:20') 
+,(744,'Bharamaputra' ,'No' ,'Dewangong' ,'06:30' ,'Dhaka' ,'12:50') 
+,(745,'Jamuna Express' ,'No' ,'Dhaka' ,'16:40' ,'B.B. East' ,'00:20') 
+,(746,'Jamuna Express' ,'No' ,'B.B. East' ,'01:10' ,'Dhaka' ,'08:00') 
+,(749,'Egarosindhur Goduli' ,'No' ,'Dhaka' ,'18:30' ,'Kisoregonj' ,'22:45') 
+,(750,'Egarosindhur Goduli' ,'Wednesday' ,'Kisoregonj' ,'12:30' ,'Dhaka' ,'16:45') 
+,(751,'Lalmoni Express' ,'Friday' ,'Dhaka' ,'22:10' ,'Lalmonirhat' ,'08:20') 
+,(752,'Lalmoni Express' ,'Friday' ,'Lalmonirhat' ,'10:40' ,'Dhaka' ,'21:05') 
+,(757,'Drutojan Express' ,'Wednesday' ,'Dhaka' ,'19:40' ,'Dinajpur' ,'05:30') 
+,(758,'Drutojan Express' ,'Wednesday' ,'Dinajpur' ,'07:40' ,'Dhaka' ,'17:55') 
+,(767,'Dolonchapa Express' ,'No' ,'Santahar' ,'13:30' ,'Dinajpur' ,'20:30') 
+,(768,'Dolonchapa Express' ,'No' ,'Dinajpur' ,'05:40' ,'Santahar' ,'12:20') 
+,(771,'Rangpur Express' ,'Sunday' ,'Dhaka' ,'09:00' ,'Rangpur','19:00') 
+,(772,'Rangpur Express' ,'Sunday' ,'Rangpur' ,'20:00' ,'Dhaka' ,'06:05') 
+,(773,'Kalani Express' ,'Friday' ,'Dhaka' ,'16:00' ,'Sylhet' ,'22:45') 
+,(774,'Kalani Express' ,'Friday' ,'Sylhet' ,'07:00' ,'Dhaka','14:10') 
+,(777,'Haor Express' ,'Wednesday' ,'Dhaka' ,'23:50' ,'Mohangonj' ,'06:10') 
+,(778,'Haor Express' ,'Thursday' ,'Mohangonj' ,'08:30' ,'Dhaka' ,'15:00') 
+,(781,'Kishorgonj Express' ,'Friday' ,'Dhaka' ,'10:20' ,'Kishorgonj' ,'14:15') 
+,(782,'Kishorgonj Express','Friday' ,'Kishorgonj','14:40','Dhaka' ,'18:50') 
+,(785,'Bijoy Express' ,'Wednesday' ,'Chittagong' ,'07:20' ,'Mymensingh' ,'16:45') 
+,(785,'Bijoy Express' ,'Tuesday' ,'Mymensingh' ,'20:00' ,'Chittagong' ,'05:30') 
+,(787,'Sonar Bangla Express' ,'Saturday' ,'Chittagong' ,'17:00' ,'Dhaka' ,'22:40') 
+,(788,'Sonar Bangla Express' ,'Saturday' ,'Dhaka' ,'07:00' ,'Chittagong' ,'12:40') 
+,(789,'Mohangonj Express' ,'Monday' ,'Dhaka' ,'12:20' ,'Mohangonj' ,'18:50') 
+,(790,'Mohangonj Express' ,'Monday' ,'Mohangonj' ,'22:00' ,'Dhaka' ,'04:30');
+
